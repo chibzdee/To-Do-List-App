@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+}
+
+.edit-items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mb-3 {
+    text-align: center; /* Center elements within the .mb-3 class */
+}
+
+  
+.heading{
+    text-align: center;
+}
+.content-table{
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.checkbox{
+    background-color: white;
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+}
+
+button{
+    
+    background-color: blue;
+    margin-top: 10px;
+    border: 0px;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+    width: 100%;
+    
+}
+
+.not-expand{
+    max-width: 150px;
+}
+
+.content-table thead tr{
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid grey;
+}
+
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid black;
+}
+
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider::before {
+    transform: translateX(26px);
+}
+
+input{
+    border: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+input::placeholder{
+    color: #222;
+    transition: color 0.3s ease;
+}
