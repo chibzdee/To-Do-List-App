@@ -52,7 +52,7 @@ def edit(id:int):
         try:
             db.session.commit()
             return redirect('/')
-        except Exception as e:
+        except Exception as e
             return f"Error: {e}"
     else:
         return render_template("edit.html", task=task)
